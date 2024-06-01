@@ -1,0 +1,49 @@
+@import '';
+
+:root {
+  --color-blue: rgb(56, 87, 246);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: bold;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-family: "DM Sans", sans-serif;
+  font-weight: normal;
+}
+
+body {
+  background-color: #000;
+}
+
+.container {
+  padding: 0 32px;
+}
+
+@media (min-width: 575.98px){
+  .container {
+    margin: auto;
+  }
+}
+
+@media (max-width: 575.98px){
+  .container {
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: 991.98px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1199.98px){
+  .container {
+    max-width: 1152px;
+  }
+}
