@@ -55,7 +55,7 @@ body {
   padding: 1em 2em;
   /*margin-top: px;*/
   border-radius: 50px;
-  background-color: rgb(100, 92, 251);
+  background-color: var(--color-blue);
   box-shadow: rgba(255, 255, 255, 0.28) 4px 4px 18px 0 inset;
   font-weight: 500;
 }
