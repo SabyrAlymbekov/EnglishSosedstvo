@@ -42,6 +42,20 @@ body {
 
 @media (min-width: 1199.98px){
   .container {
-    max-width: 1152px;
+    max-width: 1400px;
   }
+}
+
+.font__template_1{
+  font-size: 18px;
+}
+
+.button{
+  display: inline-block;
+  padding: 1em 2em;
+  /*margin-top: px;*/
+  border-radius: 50px;
+  background-color: rgb(100, 92, 251);
+  box-shadow: rgba(255, 255, 255, 0.28) 4px 4px 18px 0 inset;
+  font-weight: 500;
 }
