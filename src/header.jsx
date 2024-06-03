@@ -12,10 +12,13 @@ export default function Header() {
                     <ul className="header__list">
                         <li className="header__element1">What we do</li>
                         <li className="header__element2">Why us</li>
-                        <li className="header__element3">Trusted by</li>
-                        <li className="header__element4">Contact us</li>
+                        <li className="header__element3">Trusted us</li>
+                        <li className="header__element4">Reviews</li>
                     </ul>
                 </nav>
+                <a className="header__button">
+                    Contact us
+                </a>
                 <div className="hamburger">
                     <input className="hamburger__checkbox" type="checkbox" name="" id=""/>
                     <div className="hamburger__lines">
@@ -29,7 +32,10 @@ export default function Header() {
                         <li className="header__element1">What we do</li>
                         <li className="header__element2">Why us</li>
                         <li className="header__element3">Trusted by</li>
-                        <li className="header__element4">Contact us</li>
+                        <li className="header__element4">Reviews</li>
+                        <li className="header__button2">
+                            Contact us
+                        </li>
                     </ul>
                 </div>
             </div>
