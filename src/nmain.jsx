@@ -1,8 +1,8 @@
 import './sass/main.sass'
 import {useEffect} from "react";
-
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Button from "./components/Button/button.jsx";
 
 export default function Main() {
     useEffect(()=>{
@@ -23,7 +23,7 @@ export default function Main() {
                         CONSULTANTS SELLING THEIR SERVICES
                         <br/>
                         AS "AI GROWTH INFRASTRUCTURES"</h1>
-                    <a href="#" className="button">Click me bro, please</a>
+                    <Button>Click me bro, please</Button>
                 </div>
             </div>
         </main>

@@ -8,7 +8,9 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "DM Sans", sans-serif;
   font-weight: bold;
 }
-
+h2{
+  font-size: 43px;
+}
 * {
   font-family: "DM Sans", sans-serif;
 }
@@ -57,6 +59,7 @@ body {
 }
 
 .button{
+  /*position: relative;*/
   display: inline-block;
   padding: 1em 2em;
   /*margin-top: px;*/
@@ -64,4 +67,6 @@ body {
   background-color: var(--color-blue);
   box-shadow: rgba(255, 255, 255, 0.28) 4px 4px 18px 0 inset;
   font-weight: 500;
+  border: none;
+  /*z-index: 100;*/
 }

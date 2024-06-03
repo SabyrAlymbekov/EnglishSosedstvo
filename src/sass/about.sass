@@ -1,0 +1,53 @@
+.about_us
+  color: #ffffff
+  .container
+    display: flex
+    align-items: center
+    justify-content: space-between
+    gap: 30px
+    flex-direction: row-reverse
+    @media (max-width: 900px)
+      flex-direction: column
+  &__pict
+    width: 40%
+    display: flex
+    align-items: center
+    justify-content: center
+    @media (max-width: 900px)
+      width: 60%
+    img
+      width: 80%
+      object-fit: cover
+      object-position: 50% 50%
+      @media (max-width: 900px)
+        width: 100%
+  &__inner
+    width: 50%
+    display: flex
+    justify-content: center
+    flex-direction: column
+    gap: 40px
+    @media (max-width: 900px)
+      width: 80%
+
+    &__description
+      line-height: 155%
+      color: #b3b3c7
+      letter-spacing: 1px
+    &__header
+      font-weight: 700
+      align-self: center
+      font-size: 43px
+    //.main__upper
+    //  font-size: 13px
+    //  padding: 10px 20px
+    //  flex: 0 1 600px
+    //  display: inline-block
+    //  background-color: rgba(0, 111, 255, 0.16)
+    //  border: var(--color-blue) 1px solid
+    //  border-radius: 20px
+    //  text-align: center
+    //  color: #e8e8e8
+    //  backdrop-filter: blur(10px)
+    //  @media(max-width: 900px)
+    //    font-size: 10px
