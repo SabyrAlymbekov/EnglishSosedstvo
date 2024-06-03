@@ -23,7 +23,7 @@ export default function Main() {
                         CONSULTANTS SELLING THEIR SERVICES
                         <br/>
                         AS "AI GROWTH INFRASTRUCTURES"</h1>
-                    <Button>Click me bro, please</Button>
+                    <Button>Get started</Button>
                 </div>
             </div>
         </main>

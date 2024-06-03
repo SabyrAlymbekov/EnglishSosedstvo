@@ -1,0 +1,97 @@
+.hww
+  height: 1000px
+  width: 100%
+  position: relative
+  margin-top: 40px
+  .container
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 50px
+  &__con1
+    display: flex
+    flex-direction: row
+    align-items: center
+    gap: 30px
+  &__con2
+    display: flex
+    flex-direction: row-reverse
+    align-items: center
+    gap: 30px
+  &__block
+    display: flex
+    flex-direction: column
+    box-shadow: 0px 0px 1px 1px var(--color-blue)
+    background: #0c0f1e
+    padding: 2rem
+    border-radius: 20px
+    width: 400px
+    color: white
+    height: 200px
+    justify-content: space-between
+    @media (max-width: 670px)
+      text-align: center
+    @media (max-width: 500px)
+      width: 100vw
+      border-radius: 0
+      padding: 1.5rem
+      box-sizing: border-box
+      height: auto
+      gap: 20px
+  &__united
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 15px
+    @media (max-width: 670px)
+      display: none
+  &__num
+    font-size: 3em
+    color: white
+  &__head
+    font-size: 2em
+    @media (max-width: 500px)
+      font-size: 1.7em
+  &__desc
+    font-size: 1.2em
+    color: #b4b5b6
+    line-height: 23px
+    @media (max-width: 500px)
+      font-size: 1em
+  &__progress_bar
+    width: 3px
+    height: 250px
+    position: relative
+    background: white
+    border-radius: 10px
+    overflow: hidden
+  &__line
+    width: 3px
+    background: var(--color-blue)
+    border-radius: 10px
+  &__button
+    display: inline-block
+    padding: 0.6em 1.5em
+    /*margin-top: px;*/
+    border-radius: 50px
+    background-color: var(--color-blue)
+    box-shadow: rgba(255, 255, 255, 0.28) 4px 4px 18px 0 inset
+    font-weight: 500
+    border: none
+    font-size: 1.3em
+    width: fit-content
+    @media (max-width: 670px)
+      width: auto
+  &__slhead
+    font-size: 3em
+    color: white
+    text-align: center
+    line-height: 1.4em
+    @media (max-width: 670px)
+      font-size: 2.7em
+  &__subtxt
+    font-size: 1.5em
+    color: rgba(255, 255, 255, 0.78)
+    text-align: center
+    @media (max-width: 670px)
+      font-size: 1.3em

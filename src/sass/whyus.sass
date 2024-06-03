@@ -1,30 +1,17 @@
-.about_us
+.whyus
   position: relative
   top: -70px
   color: #ffffff
+  @media (max-width: 900px)
+    top: -200px
   .container
     display: flex
     align-items: center
     justify-content: center
     gap: 30px
-    flex-direction: row
+    flex-direction: row-reverse
     @media (max-width: 900px)
       flex-direction: column
-  &__mini
-    font-size: 17px
-    padding: 10px 30px
-    width: fit-content
-    background-color: rgba(0, 111, 255, 0.16)
-    border: var(--color-blue) 1px solid
-    border-radius: 20px
-    color: #e8e8e8
-    text-align: center
-    backdrop-filter: blur(10px)
-    @media(max-width: 1400px)
-      font-size: 15px
-    @media(max-width: 900px)
-      font-size: 13px
-      align-self: center
   &__pict
     width: 500px
     display: flex

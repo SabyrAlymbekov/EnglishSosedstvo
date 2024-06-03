@@ -68,5 +68,6 @@ body {
   box-shadow: rgba(255, 255, 255, 0.28) 4px 4px 18px 0 inset;
   font-weight: 500;
   border: none;
+  font-size: 1.3em;
   /*z-index: 100;*/
 }

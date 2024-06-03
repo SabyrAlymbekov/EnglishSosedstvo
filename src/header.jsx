@@ -11,8 +11,8 @@ export default function Header() {
                 <nav className="header__nav">
                     <ul className="header__list">
                         <li className="header__element1">What we do</li>
+                        <li className="header__element1">How we work</li>
                         <li className="header__element2">Why us</li>
-                        <li className="header__element3">Trusted us</li>
                         <li className="header__element4">Reviews</li>
                     </ul>
                 </nav>
@@ -30,8 +30,8 @@ export default function Header() {
                 <div className="header__menu">
                     <ul className="header__list">
                         <li className="header__element1">What we do</li>
+                        <li className="header__element1">How we work</li>
                         <li className="header__element2">Why us</li>
-                        <li className="header__element3">Trusted by</li>
                         <li className="header__element4">Reviews</li>
                         <li className="header__button2">
                             Contact us

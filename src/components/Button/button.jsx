@@ -1,7 +1,7 @@
-// import '../../css/App.css'
 
+// eslint-disable-next-line react/prop-types
 export default function Button({children}) {
     return(
-        <button disabled className='button' style={{color: "white", cursor:"pointer"}}>{children}</button>
+        <a href='#' className='button' style={{color: "white", cursor:"pointer"}}>{children}</a>
     )
 }
