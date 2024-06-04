@@ -1,17 +1,17 @@
 import './sass/whyus.sass'
 import climg from './assets/revenueimg.png'
-import {useEffect} from "react";
-import AOS from "aos";
+// import {useEffect} from "react";
+// import AOS from "aos"
 
 export default function Whyus() {
-    useEffect(()=>{
-        AOS.init({
-            delay: 0,
-            duration: 1000
-        })
-    }, [])
+    // useEffect(()=>{
+    //     AOS.init({
+    //         delay: 0,
+    //         duration: 1000
+    //     })
+    // }, [])
     return (
-        <div className="whyus">
+        <div className="whyus" id="whyus">
             <div className="container">
                 <img
                     src={climg}

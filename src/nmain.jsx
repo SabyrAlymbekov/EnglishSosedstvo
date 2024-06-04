@@ -1,16 +1,16 @@
 import './sass/main.sass'
-import {useEffect} from "react";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+// import {useEffect} from "react";
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
 import Button from "./components/Button/button.jsx";
 
 export default function Main() {
-    useEffect(()=>{
-        AOS.init({
-            delay: 0,
-            duration: 1000
-        })
-    }, [])
+    // useEffect(()=>{
+    //     AOS.init({
+    //         delay: 0,
+    //         duration: 1000
+    //     })
+    // }, [])
     return (
         <main className="main">
             <div className="blur"></div>

@@ -1,17 +1,17 @@
 import './sass/about.sass'
 import climg from './assets/clientimage.png'
-import {useEffect} from "react";
-import AOS from "aos";
+// import {useEffect} from "react";
+// import AOS from "aos";
 
 export default function About() {
-    useEffect(()=>{
-        AOS.init({
-            delay: 0,
-            duration: 1000
-        })
-    }, [])
+    // useEffect(()=>{
+    //     AOS.init({
+    //         delay: 0,
+    //         duration: 1000
+    //     })
+    // }, [])
     return (
-        <div className="about_us">
+        <div className="about_us" id="whatwedo">
             <div className="container">
                 <img
                     src={climg}
