@@ -61,7 +61,7 @@ body {
 .button{
   /*position: relative;*/
   display: inline-block;
-  padding: 1em 2em;
+  padding: 0.7em 1.7em;
   /*margin-top: px;*/
   border-radius: 50px;
   background-color: var(--color-blue);

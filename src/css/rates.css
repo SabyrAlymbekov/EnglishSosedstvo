@@ -1,0 +1,73 @@
+.rate {
+  color: white;
+}
+.rate .button {
+  width: 100px;
+  text-align: center;
+}
+.rate .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media (max-width: 900px) {
+  .rate .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+.rate__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 100px 0;
+  width: 50%;
+}
+@media (max-width: 900px) {
+  .rate__inner {
+    gap: 30px;
+  }
+}
+.rate__inner p {
+  font-size: 30px;
+  line-height: 120%;
+}
+@media (max-width: 800px) {
+  .rate__inner p {
+    font-size: 20px;
+  }
+}
+.rate__inner__quotation__mark {
+  width: 98px;
+  height: 72px;
+  background-image: url("https://assets-global.website-files.com/662cfa87c5ae0d51e509acbd/662cfa88c5ae0d51e509ad2c_comma%20icon.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.rate__img {
+  width: 40%;
+}
+@media (max-width: 1205px) {
+  .rate__img {
+    width: 60%;
+  }
+}
+.rate__img img {
+  width: 100%;
+}
