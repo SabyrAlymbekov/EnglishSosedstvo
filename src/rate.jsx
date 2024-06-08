@@ -32,28 +32,35 @@ const Rate = () => {
     return (
         <div className="Rate">
             <div className="container">
+                <h1 className="head__slogan">
+                    Learn more from our happy clients
+                </h1>
                 <div >
                     <Swiper modules={[Navigation, Pagination, Scrollbar, A11y]}
                             className="swiper"
 
                             loop={true}
-                        // navigation={true}
-                        // pagination={true}
                     >
                         <SwiperSlide>
                             <Rates
-                                amount={1}
-                                URL={`https://assets-global.website-files.com/662cfa87c5ae0d51e509acbd/662cfa88c5ae0d51e509ad4a_Testimonial%2520member1-p-500.png`}/>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Rates
-                                amount={3}
-                                URL={`https://assets-global.website-files.com/662cfa87c5ae0d51e509acbd/662cfa88c5ae0d51e509ad4b_Testimonial%2520member2-p-500.png`}/>
+                                amount={5}
+                                URL={`https://assets-global.website-files.com/662cfa87c5ae0d51e509acbd/662cfa88c5ae0d51e509ad4a_Testimonial%2520member1-p-500.png`}
+                                desc="“Start AI came at the right time when started to scale our agency. This tool is saving us a lot of time and we are more efficient than ever. No more back and forth and now we can scale our operations easier than ever.”"
+                                name={"Hanna Michigan"}/>
                         </SwiperSlide>
                         <SwiperSlide>
                             <Rates
                                 amount={5}
-                                URL={`https://assets-global.website-files.com/662cfa87c5ae0d51e509acbd/662cfa88c5ae0d51e509ad48_Testimonial%2520member4-p-500.png`}/>
+                                URL={`https://assets-global.website-files.com/662cfa87c5ae0d51e509acbd/662cfa88c5ae0d51e509ad4b_Testimonial%2520member2-p-500.png`}
+                            desc="“Start AI came at the right time when started to scale our agency. This tool is saving us a lot of time and we are more efficient than ever. No more back and forth and now we can scale our operations easier than ever.”"
+                            name={"Miki Vazovski"}/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Rates
+                                amount={5}
+                                URL={`https://assets-global.website-files.com/662cfa87c5ae0d51e509acbd/662cfa88c5ae0d51e509ad48_Testimonial%2520member4-p-500.png`}
+                                name={"Iosiff Stalin"}
+                                desc={"“Start AI came at the right time when started to scale our agency. This tool is saving us a lot of time and we are more efficient than ever. No more back and forth and now we can scale our operations easier than ever.”"}/>
                         </SwiperSlide>
                         <CustomButtonSwiper/>
                     </Swiper>

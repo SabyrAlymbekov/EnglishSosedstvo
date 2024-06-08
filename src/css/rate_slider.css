@@ -13,3 +13,19 @@
 .swiper {
   position: relative;
 }
+
+.head__slogan {
+  color: white;
+  font-size: 3em;
+  text-align: center;
+  margin: 100px auto 50px;
+  max-width: 500px;
+}
+
+@media (max-width: 500px) {
+  .head__slogan {
+    color: white;
+    font-size: 2em;
+    max-width: 373px;
+  }
+}

@@ -2,7 +2,7 @@ import Stars from "./stars.jsx";
 import '../css/rates.css'
 import Button from "./Button/button.jsx";
 // eslint-disable-next-line react/prop-types
-function Rates({URL, amount}) {
+function Rates({URL, amount, desc, name}) {
     return (
         <div className={"rate"}>
             <div className="container">
@@ -14,10 +14,10 @@ function Rates({URL, amount}) {
                 <div className="rate__inner" >
                     <div className="rate__inner__quotation__mark" data-aos="fade-right"></div>
                     <Stars amount={amount} ></Stars>
-                    <p data-aos="fade-up">
-                        “Start AI came at the right time when started to scale our agency. This tool is saving us a lot of time and we are more efficient than ever. No more back and forth and now we can scale our operations easier than ever.”
+                    <p data-aos="fade-up" className="rate__desc">
+                        {desc}
                     </p>
-                    {/*<Button>More</Button>*/}
+                    <h1 className={"rate__head"}>{name}</h1>
                 </div>
             </div>
         </div>

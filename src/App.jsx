@@ -8,24 +8,31 @@ import Whyus from "./whyus.jsx";
 import Footer from "./footer.jsx";
 import Rate from "./rate.jsx";
 import Form from "./form.jsx"
+import {CalendarContext} from "./components/calendar.jsx";
+import {useState} from "react";
 
 
 function App() {
+    const [opdate, setOpdate] = useState({
+        day: 0,
+        month: 0,
+        year: 0,
+    });
     return (
-        <>
+        <CalendarContext.Provider value={{
+            opdate,
+            setOpdate
+        }}>
             <Header/>
             <Main/>
             <Numbers/>
             <About/>
-            <Howwework/>
-            <Whyus/>
-            <Footer/>
             <Howwework></Howwework>
             <Whyus></Whyus>
             <Rate/>
             <Form></Form>
             <Footer></Footer>
-        </>
+        </CalendarContext.Provider>
     );
 }
 

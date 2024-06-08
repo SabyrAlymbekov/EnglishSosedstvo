@@ -1,19 +1,26 @@
-import { useState, useEffect } from 'react';
+import {useState, useEffect, createContext, useContext} from 'react';
 import styles from '../css/calendar.module.css';
 import chevleft from "../assets/chevronleft.svg"
 import chevright from "../assets/chevronright.svg"
+
+export const CalendarContext = createContext({
+    opdate: {
+        day: 0,
+        month: 0,
+        year: 0,
+    },
+    setOpdate: () => {}
+})
 
 const Calendar = () => {
     const [date, setDate] = useState(new Date());
     const [currYear, setCurrYear] = useState(date.getFullYear());
     const [currMonth, setCurrMonth] = useState(date.getMonth());
     const [days, setDays] = useState([]);
-    const [opdate, setOpdate] = useState({
-        day: 0,
-        month: 0,
-        year: 0,
-    });
-
+    const {
+        opdate,
+        setOpdate
+    } = useContext(CalendarContext);
     const months = [
         "January", "February", "March", "April", "May", "June",
         "July", "August", "September", "October", "November", "December"
