@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import Rates from "./components/Rates.jsx";
 // import { Navigation } from 'swiper/modules';

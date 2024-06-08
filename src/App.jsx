@@ -7,7 +7,7 @@ import Howwework from "./howwework.jsx";
 import Whyus from "./whyus.jsx";
 import Footer from "./footer.jsx";
 import Rate from "./rate.jsx";
-
+import Form from "./form.jsx"
 
 
 function App() {
@@ -19,9 +19,12 @@ function App() {
             <About/>
             <Howwework/>
             <Whyus/>
-            {/*<Rates amount={5} URL={`https://assets-global.website-files.com/662cfa87c5ae0d51e509acbd/662cfa88c5ae0d51e509ad49_Testimonial%20member3.png`}/>*/}
-            <Rate/>
             <Footer/>
+            <Howwework></Howwework>
+            <Whyus></Whyus>
+            <Rate/>
+            <Form></Form>
+            <Footer></Footer>
         </>
     );
 }
