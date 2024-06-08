@@ -1,5 +1,6 @@
 import "./sass/howwework.sass"
 import {useEffect, useState, useRef} from "react";
+import {Link} from "react-scroll";
 // import AOS from "aos";
 
 function getCoords(elem) {
@@ -76,7 +77,7 @@ export default function Howwework() {
                             facilisis dui. Donec at eros elementum, auctor lectus sed, vestibulum leo. Nam eget ante
                             placerat.
                         </p>
-                        <div className="hww__button" data-aos="fade-up" data-aos-delay="300">Contact Us</div>
+                        <div className="hww__button" data-aos="fade-up" data-aos-delay="300"><Link to="contact" smooth={true} duration={800}>Contact Us</Link></div>
                     </div>
                 </div>
                 <div className="hww__con2">

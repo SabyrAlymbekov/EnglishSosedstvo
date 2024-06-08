@@ -27,10 +27,9 @@ const Rate = () => {
     //         },
     //     });
     // }, []);
-
-
+    
     return (
-        <div className="Rate">
+        <div className="Rate" id="reviews">
             <div className="container">
                 <h1 className="head__slogan">
                     Learn more from our happy clients

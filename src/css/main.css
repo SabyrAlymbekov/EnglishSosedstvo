@@ -1,15 +1,12 @@
 .main {
   position: relative;
   top: 100px;
-  padding: 100px 0 0;
   opacity: 1;
   background-image: url("../assets/wave.png");
   background-size: cover;
   -webkit-box-shadow: inset 0px -76px 44px -55px rgb(0, 0, 0);
           box-shadow: inset 0px -76px 44px -55px rgb(0, 0, 0);
   width: 100%;
-  position: relative;
-  z-index: -2;
   padding: 100px 0 100px 0;
   background-position: center;
   display: -webkit-box;

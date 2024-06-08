@@ -3,6 +3,7 @@ import './sass/main.sass'
 // import AOS from 'aos';
 // import 'aos/dist/aos.css';
 import Button from "./components/Button/button.jsx";
+import {Link} from "react-scroll";
 
 export default function Main() {
     // useEffect(()=>{
@@ -23,7 +24,7 @@ export default function Main() {
                         CONSULTANTS SELLING THEIR SERVICES
                         <br/>
                         AS "AI GROWTH INFRASTRUCTURES"</h1>
-                    <Button>Get started</Button>
+                    <Button><Link to="contact" smooth={true} duration={800}>Get started</Link></Button>
                 </div>
             </div>
         </main>
