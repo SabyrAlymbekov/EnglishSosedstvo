@@ -15,11 +15,13 @@ export default function Form() {
         <div className="form" id="contact">
             <div className="container">
                 <form action="#" onSubmit={async (e) => {
+                    console.log(date)
                     if (date == {
                         day: 0,
                         month: 0,
                         year: 0,
                     }) return;
+                    console.log(URL_API)
                     e.preventDefault();
                     const [name, email, phone, time] = [e.target[0].value, e.target[1].value, e.target[2].value, e.target[3].value]
                     const text = `Name: ${name}\nemail: ${email}\nPhone: ${phone}\ndate: ${date.day < 10 ? '0' + date.day : date.day}.${date.month < 10 ? '0' + date.month : date.month}.${date.year}\ntime=${time}\nwhen and where: ${new Date()}`
@@ -30,9 +32,8 @@ export default function Form() {
                         })
                     location.reload()
                 }}>
-                    <div className="form__left">
                         <div className="form__head">
-                            Contact us
+                            Become a volunteer
                         </div>
                         <div className="input">
                             <input type="text" className="input-field" required/>
@@ -46,15 +47,7 @@ export default function Form() {
                             <input type="text" className="input-field" required/>
                             <label className="input-label">Phone</label>
                         </div>
-                        <div className="input-time">
-                            <input type="time" className="input-field-time" required/>
-                            <label className="input-label-time">Time</label>
-                        </div>
-            </div>
-            <div className="form__right">
-                <Calendar></Calendar>
-                <button className="submit" type="submit">Get Started</button>
-                </div>
+                    <button className="submit" type="submit">Get Started</button>
                 </form>
             </div>
         </div>

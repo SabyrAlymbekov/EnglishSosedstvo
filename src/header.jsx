@@ -20,7 +20,7 @@ export default function Header() {
         <header className="header" style={{ backgroundColor: bg }}>
             <div className="container">
                 <Link to="home" className="logo header__logo link" smooth={true} duration={800}>
-                    <h1 className="logo__text">PrimeAdvertising</h1>
+                    <h1 className="logo__text">EngSosedstvo</h1>
                 </Link>
                 <nav className="header__nav">
                     <ul className="header__list">

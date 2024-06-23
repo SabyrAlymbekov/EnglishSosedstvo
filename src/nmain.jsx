@@ -24,7 +24,7 @@ export default function Main() {
                         CONSULTANTS SELLING THEIR SERVICES
                         <br/>
                         AS "AI GROWTH INFRASTRUCTURES"</h1>
-                    <Button><Link to="contact" smooth={true} duration={800}>Get started</Link></Button>
+                    <Button>Get started</Button>
                 </div>
             </div>
         </main>

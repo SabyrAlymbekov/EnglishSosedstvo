@@ -27,7 +27,7 @@ const Rate = () => {
     //         },
     //     });
     // }, []);
-    
+
     return (
         <div className="Rate" id="reviews">
             <div className="container">
