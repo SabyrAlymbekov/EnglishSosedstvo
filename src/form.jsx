@@ -1,36 +1,26 @@
 import './sass/form.sass'
-import Calendar from "./components/calendar.jsx";
 import Bot from "../bot.json"
-import {CalendarContext} from "./components/calendar.jsx";
-import {useContext} from "react";
 
 const token = Bot.token
 const URL_API = `https://api.telegram.org/bot${token}/sendMessage`
 const chatId = Bot.chatId
 
 export default function Form() {
-    const opdate = useContext(CalendarContext);
-    const date = opdate.opdate
     return (
         <div className="form" id="contact">
             <div className="container">
                 <form action="#" onSubmit={async (e) => {
-                    console.log(date)
-                    if (date == {
-                        day: 0,
-                        month: 0,
-                        year: 0,
-                    }) return;
-                    console.log(URL_API)
                     e.preventDefault();
-                    const [name, email, phone, time] = [e.target[0].value, e.target[1].value, e.target[2].value, e.target[3].value]
-                    const text = `Name: ${name}\nemail: ${email}\nPhone: ${phone}\ndate: ${date.day < 10 ? '0' + date.day : date.day}.${date.month < 10 ? '0' + date.month : date.month}.${date.year}\ntime=${time}\nwhen and where: ${new Date()}`
-                        await fetch(URL_API, {
-                            method:'POST',
-                            headers: {"Content-type": "application/json"},
-                            body: JSON.stringify({chat_id: chatId, text})
-                        })
-                    location.reload()
+                    const [name, email, phone] = [e.target[0].value, e.target[1].value, e.target[2].value]
+                    const text = `Name: ${name}\nemail: ${email}\nPhone: ${phone}\nwhen and where: ${new Date()}`
+                    await fetch(URL_API, {
+                        method:'POST',
+                        headers: {"Content-type": "application/json"},
+                        body: JSON.stringify({chat_id: chatId, text})
+                    })
+                    e.target[0].value = ''
+                    e.target[1].value = ''
+                    e.target[2].value = ''
                 }}>
                         <div className="form__head">
                             Become a volunteer
@@ -40,7 +30,7 @@ export default function Form() {
                             <label className="input-label">Full name</label>
                         </div>
                         <div className="input">
-                            <input type="email" className="input-field" required/>
+                            <input type="text" className="input-field" required/>
                             <label className="input-label">Email</label>
                         </div>
                         <div className="input">
